@@ -57,3 +57,14 @@ function displayQuestion() {
     choices.append(btnOne, btnTwo, btnThree, btnFour);
 };
 
+var startbtn = document.getElementById("start");
+startbtn.addEventListener("click", function () {
+    var questionContainer = document.getElementById("questions");
+    questionContainer.classList.remove("hide");
+    var startScreen = document.getElementById("start-screen");
+    startScreen.classList.add("hide");
+    startTimer();
+    displayQuestion();
+});
+
+

@@ -31,5 +31,29 @@ function answerClick(event) {
         endScreen.classList.remove("hide");
 
     }
-}
+};
+
+function displayQuestion() {
+    var QuestionTitle = document.getElementById("question-title");
+    QuestionTitle.textContent = questions[currentIndex].questionText;
+    var btnOne = document.createElement("button");
+    var btnTwo = document.createElement("button");
+    var btnThree = document.createElement("button");
+    var btnFour = document.createElement("button");
+
+    btnOne.textContent = questions[currentIndex].answer[0];
+    btnTwo.textContent = questions[currentIndex].answer[1];
+    btnThree.textContent = questions[currentIndex].answer[2];
+    btnFour.textContent = questions[currentIndex].answer[3];
+
+    btnOne.addEventListener("click", answerClick);
+    btnTwo.addEventListener("click", answerClick);
+    btnThree.addEventListener("click", answerClick);
+    btnFour.addEventListener("click", answerClick);
+
+
+    var choices = document.getElementById("choices");
+    choices.innerHTML = "";
+    choices.append(btnOne, btnTwo, btnThree, btnFour);
+};
 

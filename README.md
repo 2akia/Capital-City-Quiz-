@@ -61,7 +61,7 @@ The tools that have been added in this project:
 
 > [!URL]
 
-- [Deployed application]()
+- [Deployed application](https://2akia.github.io/Capital-City-Quiz-/)
 
 - [GitHub repository](https://github.com/2akia/Capital-City-Quiz-)
 

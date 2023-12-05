@@ -3,6 +3,7 @@ var currentIndex = 0;
 
 var timeLeft = 75;
 var timeEl = document.getElementById("time");
+var score = 0;
 
 function startTimer() {
     var timerInterval = setInterval(function () {
@@ -31,7 +32,9 @@ function endGame() {
 
     var submitBtn = document.getElementById("submit");
     submitBtn.addEventListener("click", saveScore);
-};
+
+
+}
 
 function answerClick(event) {
     var clickAnswer = event.target.textContent;
@@ -54,7 +57,9 @@ function answerClick(event) {
         endScreen.classList.remove("hide");
 
     }
-};
+}
+
+
 
 function displayQuestion() {
     var QuestionTitle = document.getElementById("question-title");
@@ -88,7 +93,7 @@ startbtn.addEventListener("click", function () {
     startScreen.classList.add("hide");
     startTimer();
     displayQuestion();
-});
+})
 
 
 var submitBtn = document.getElementById("submit");
@@ -98,5 +103,4 @@ function saveScore() {
     var initialsInput = document.getElementById("initials").value;
     alert(initialsInput + score);
 };
-
 

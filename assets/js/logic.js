@@ -31,7 +31,7 @@ function endGame() {
 
     var submitBtn = document.getElementById("submit");
     submitBtn.addEventListener("click", saveScore);
-}
+};
 
 function answerClick(event) {
     var clickAnswer = event.target.textContent;
@@ -39,9 +39,9 @@ function answerClick(event) {
     var correctAnswer = questions[currentIndex].correct;
 
     if (clickAnswer == correctAnswer) {
-        alert ("correct")
+        score += 10;
     } else {
-        alert("wrong")
+        timeLeft -= 10;
     }
 
     if (currentIndex < questions.length - 1) {

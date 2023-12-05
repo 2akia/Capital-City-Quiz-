@@ -19,10 +19,10 @@ We were tasked with creating a timed quiz on JavaScript fundamentals that stores
 3. Install the required software components
 4. Start the application.
 
-![Example Screenshot 1]()
-![Example Screenshot 1]()
-![Example Screenshot 1]()
-![Example Screenshot 1]()
+![Example Screenshot 1](/assets/screenshots/Screenshot%201.png)
+![Example Screenshot 2](/assets/screenshots/Screenshot%202..png)
+![Example Screenshot 3](/assets/screenshots/Screenshot%203.png)
+![Example Screenshot 4](/assets/screenshots/Screenshot4.png)
 
 
 # Resources 
@@ -63,7 +63,7 @@ The tools that have been added in this project:
 
 - [Deployed application]()
 
-- [GitHub repository]()
+- [GitHub repository](https://github.com/2akia/Capital-City-Quiz-)
 
 
 Thank you for having a look.

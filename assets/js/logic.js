@@ -94,3 +94,9 @@ startbtn.addEventListener("click", function () {
 var submitBtn = document.getElementById("submit");
 submitBtn.addEventListener("click", saveScore);
 
+function saveScore() {
+    var initialsInput = document.getElementById("initials").value;
+    alert(initialsInput + score);
+};
+
+

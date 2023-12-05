@@ -1,21 +1,31 @@
 
 var questions = [
-    
-    { questionText: "what is the capital city of UK?",
 
-    answer: ["Paris", "Berlin", "London", "Birmingham"],
+    {
+        questionText: "what is the capital city of UK? ",
 
-    correct: "London",
+        answer: ["Paris", "Berlin", "London", "Birmingham"],
+
+        correct: "London",
 
 
     },
 
-    { questionText: "what is the capital city of Spain?",
+    {
+        questionText: "what is the capital city of Spain? ",
 
-    answer: ["Lisbon", "Madrid", "Monaco", "Valencia"],
+        answer: ["Lisbon", "Madrid", "Monaco", "Valencia"],
 
-    correct:"Madrid",
-    
+        correct: "Madrid",
+
+    },
+
+    {
+        questionText: "What is the capital city of Japan? ",
+
+        answer: ["Tokyo", "Osaka", "Hiroshima", "Kobe"],
+
+        correct: "Tokyo",
     },
 
 

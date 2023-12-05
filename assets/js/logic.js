@@ -3,12 +3,35 @@ var currentIndex = 0;
 
 var timeLeft = 75;
 var timeEl = document.getElementById("time");
+
 function startTimer() {
-    setInterval(function () {
+    var timerInterval = setInterval(function () {
         timeEl.textContent = timeLeft;
         timeLeft--;
+
+        if (timeLeft <= 0) {
+            clearInterval(timerInterval);
+            endGame();
+        }
     }, 1000)
 };
+
+function endGame() {
+    clearInterval(timerInterval);
+    timeLeft = Math.max(timeLeft, 0);
+    timeEl.textContent = timeLeft;
+
+    var questionContainer = document.getElementById("questions");
+    questionContainer.classList.add("hide");
+    var endScreen = document.getElementById("end-screen");
+    endScreen.classList.remove("hide");
+
+    var finalScoreE1 = document.getElementById("final - score");
+    finalScoreE1.textContent = score;
+
+    var submitBtn = document.getElementById("submit");
+    submitBtn.addEventListener("click", saveScore);
+}
 
 function answerClick(event) {
     var clickAnswer = event.target.textContent;
@@ -16,7 +39,7 @@ function answerClick(event) {
     var correctAnswer = questions[currentIndex].correct;
 
     if (clickAnswer == correctAnswer) {
-        alert("correct")
+        alert ("correct")
     } else {
         alert("wrong")
     }

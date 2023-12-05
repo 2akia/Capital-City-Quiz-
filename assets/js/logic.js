@@ -91,3 +91,6 @@ startbtn.addEventListener("click", function () {
 });
 
 
+var submitBtn = document.getElementById("submit");
+submitBtn.addEventListener("click", saveScore);
+
